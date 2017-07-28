@@ -1,0 +1,16 @@
+version: "2.1"
+
+services: 
+  server:
+    build: 
+      context: ../
+      dockerfile: Dockerfile-server
+    container_name: frp-server
+    restart: always
+    ports:
+      - 7000:7000
+      - 7500:7500
+      - 36000-36099:36000-36099
+    volumes: 
+      - /home/wwwroot/log/frp-server:/frp/logs
+      - ./config:/frp/config

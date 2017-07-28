@@ -1,0 +1,14 @@
+FROM centos:latest
+
+RUN mkdir -p /frp/config
+
+WORKDIR /frp
+
+RUN mkdir logs
+
+COPY ./frp/frpc ./
+COPY ./frp/config/frpc.ini ./config
+
+EXPOSE 7400 80 443 36000:36099
+
+CMD ./frpc -c ./config/frpc.ini
