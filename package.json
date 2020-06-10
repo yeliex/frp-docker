@@ -1,0 +1,16 @@
+{
+  "name": "frp-docker",
+  "version": "0.1.0",
+  "description": "frp docker image",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/frp-docker.git"
+  },
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yeliex/frp-docker/issues"
+  },
+  "homepage": "https://github.com/yeliex/frp-docker#readme"
+}
